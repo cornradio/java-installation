@@ -1,0 +1,108 @@
+
+// To view the default settings, hold "alt" while clicking on the "Settings" button.
+// For documentation on these settings, see: https://aka.ms/terminal-documentation
+// i fond themes on this site! https://atomcorp.github.io/themes/
+
+
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+
+    "defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",//change here to set defalut terminal
+    
+
+    "profiles":
+    {
+        
+
+        "defaults":
+        {
+            "colorScheme":  "Calamity",
+            "acrylicOpacity" : 0.7,
+            "useAcrylic" : true,
+            "cursorColor": "#00fd15",
+            "cursorShape": "emptyBox",
+            "fontFace": "Fira Code"
+            // Put settings here that you want to apply to all profiles
+        },
+        "list":
+        [
+            {
+                // Make changes here to the powershell.exe profile
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "name": "Windows PowerShell",
+                "commandline": "powershell.exe",
+                "hidden": false
+            },
+            {
+                // Make changes here to the cmd.exe profile
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "name": "cmd",
+                "commandline": "cmd.exe",
+                "hidden": false
+            },
+            {
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl"
+            },
+            {
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": true,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            }
+        ]
+    },
+
+    // Add custom color schemes to this array
+    "schemes": [
+        {
+            "name": "Dracula",
+            "black": "#000000",
+            "red": "#ff5555",
+            "green": "#50fa7b",
+            "yellow": "#f1fa8c",
+            "blue": "#bd93f9",
+            "purple": "#ff79c6",
+            "cyan": "#8be9fd",
+            "white": "#bbbbbb",
+            "brightBlack": "#555555",
+            "brightRed": "#ff5555",
+            "brightGreen": "#50fa7b",
+            "brightYellow": "#f1fa8c",
+            "brightBlue": "#bd93f9",
+            "brightPurple": "#ff79c6",
+            "brightCyan": "#8be9fd",
+            "brightWhite": "#ffffff",
+            "background": "#1e1f29",
+            "foreground": "#f8f8f2"
+          },
+          {
+            "name": "Calamity",
+            "black": "#2f2833",
+            "red": "#fc644d",
+            "green": "#a5f69c",
+            "yellow": "#e9d7a5",
+            "blue": "#3b79c7",
+            "purple": "#f92672",
+            "cyan": "#74d3de",
+            "white": "#d5ced9",
+            "brightBlack": "#7e6c88",
+            "brightRed": "#fc644d",
+            "brightGreen": "#a5f69c",
+            "brightYellow": "#e9d7a5",
+            "brightBlue": "#3b79c7",
+            "brightPurple": "#f92672",
+            "brightCyan": "#74d3de",
+            "brightWhite": "#ffffff",
+            "background": "#2f2833",
+            "foreground": "#d5ced9"
+          }
+    ],
+
+    // Add any keybinding overrides to this array.
+    // To unbind a default keybinding, set the command to "unbound"
+    "keybindings": []
+}
+

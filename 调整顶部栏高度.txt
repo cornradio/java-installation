@@ -1,0 +1,6 @@
+打开文件管理器，右键管理员，使用vscode打开下面的文件：
+/usr/share/themes/deepin/gtk-3.0/gtk.css
+
+1、找到行.ssd decoration headerbar.default-decoration button.titlebutton，将里面的min-height:改为min-height:0，
+
+2、找到2263行，将menu,.menu下的margin：4px，改为margin:0。
